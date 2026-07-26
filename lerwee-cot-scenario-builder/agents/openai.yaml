@@ -1,0 +1,4 @@
+interface:
+  display_name: "乐维CoT场景制作"
+  short_description: "乐维AI运维场景从设计、开发到发布上线的完整制作流程"
+  default_prompt: "Use \\-cot-scenario-builder to create a new CoT diagnostic scene"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "乐维CoT场景测试验证"
+  short_description: "乐维AI运维场景真实数据测试、CoT检查与浏览器验证流程"
+  default_prompt: "Use \\-cot-scenario-testing to test and verify a CoT scene with real data"
