@@ -28,6 +28,17 @@
 - 浏览器环境配置（Chromium、CDP、profile、常见问题）
 - external_db 安全测试方案（A/B/C 分级）
 
+### lerwee-cot-scenario-sync
+
+场景同步发布。场景测试通过后同步到平台、PromptHub 和在线表格。
+
+包含：
+
+- 平台回读确认（1.79 / 3.92）
+- README 和 ZIP 生成（使用原 UUID）
+- PromptHub 上传和版本管理
+- 企业微信在线表格更新和回读验收
+
 ## 安装
 
 将两个目录复制到 Codex skills 目录：
@@ -45,6 +56,7 @@ Codex 重启后自动发现。
 
 - "做一个 MySQL 慢查询分析场景" -> 自动触发 builder
 - "测试这个场景" -> 自动触发 testing
+- "同步到 PromptHub" -> 自动触发 sync
 - "修复 Nginx 场景" -> 自动触发 builder
 - "验证 PostgreSQL 场景的 CoT" -> 自动触发 testing
 
@@ -52,6 +64,7 @@ Codex 重启后自动发现。
 
 - `$lerwee-cot-scenario-builder`
 - `$lerwee-cot-scenario-testing`
+- `$lerwee-cot-scenario-sync`
 
 ## 环境要求
 

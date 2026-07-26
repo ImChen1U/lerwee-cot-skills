@@ -1,0 +1,4 @@
+interface:
+  display_name: "乐维CoT场景同步发布"
+  short_description: "乐维场景同步到平台、PromptHub和在线表格的完整发布流程"
+  default_prompt: "Use \\-cot-scenario-sync to sync a tested scene to all platforms"
