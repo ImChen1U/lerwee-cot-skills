@@ -1,0 +1,5 @@
+
+interface:
+  display_name: "乐维CoT纯接口测试器"
+  short_description: "CDP提取token后全程HTTP调用，不点击UI，快速回归"
+  default_prompt: "Use $lerwee-cot-api-tester to run a quick API-based test"
