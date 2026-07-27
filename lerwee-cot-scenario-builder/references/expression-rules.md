@@ -161,3 +161,7 @@
 | 192.168.3.92 | cb418066f8947b6cba73dff8cb76c7fb |
 
 签名 API 路径：/backend_api/api/v6/lerwee/prompt-template-create（POST + timestamp + sign）
+### select 使用规则（重要）
+只有 host 表达式需要 select:"single" 或 select:"multi"。
+metric、alert、report、external_db、automation 表达式不要加 select，它们通过 rel 自动关联 host 的选择结果。
+如果 metric 或 report 加了 select:"multi"，平台会把每个指标项或报表项都列出来让用户手动勾选（可能几百条），导致"开始对话"按钮无法启用。
